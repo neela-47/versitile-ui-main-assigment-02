@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font-family {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"slnt" 0
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.span-font-family {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+body{
+    background-color: black;
+}
+/* shared content */
+.display-flex{
+    display: flex;
+}
+.text-color{
+    color: #E6533C;
+}
+.title-color{
+    color: white;
+}
+.paragraph-color{
+    color: rgba(255, 255, 255, 0.5);
+}
+.btn-primary{
+    background-color: #E6533C;
+    color: white;
+    border-radius: 45px;
+    border: none;
+    padding: 8px 20px;
+    margin-right: 20px;
+  
+}
+
+
+/* header style */
+.header-container{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 57px;
+    /* border: 1px solid red; */
+}
+nav{
+    justify-content:space-between;
+    align-items: center;
+}
+nav  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+    border-radius: 50px;
+    padding-left: 0px;
+
+}
+nav  ul li{
+    list-style: none;
+    color: white;
+    margin-right: 30px;
+    
+}
+i{
+    color: white;
+   
+    
+}
+.hamburger{
+    display: none;
+}
+
+.banner-contents{
+    gap: 88px;
+}
+#txt-design{
+    font-family: "Dancing Script", cursive;
+}
+.download{
+    background-color: black;
+    border: .5px solid white;
+}
+.banner-content{
+    width: 50%;
+    margin-top: 50px;
+}
+.banner-title{
+    font-size: 4.8rem;
+    margin-bottom: 0px;
+}
+.banner-description{
+    margin-bottom: 20px;
+}
+
+.banner-img img{
+    width: 100%;
+    position: relative;
+}
+.badge
+{
+    width: 206px;
+    height: 96px;
+   color: white;
+   background-color: rgba(48, 48, 48, 0.54);
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 12px;
+   position: absolute;
+   margin-top: -150px;
+   margin-right: -100ox;
+   
+ 
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
+
+
+/* responsive */
+/* medium device */
+/* small device */
+@media screen and (max-width: 576px) {
+    nav, .banner-contents{
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+        margin-bottom: -45px;
+    }
+    .banner-title{
+        font-size: 2.8rem;
+    }
+    nav  ul{
+        display: none;
+    }
+    .hamburger{
+        display: inline ;
+    }
+}

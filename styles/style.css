@@ -103,7 +103,7 @@ i{
 
 .banner-img img{
     width: 100%;
-    position: relative;
+    
 }
 .badge
 {
@@ -133,9 +133,14 @@ i{
     margin: 0 auto;
     text-align: center;
 }
+.habit-img-container{
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
 .habit-img-contents{
-    width: 20%;
-    text-align: center;
+   text-align: center;
 }
 .habit-img-contents img{
     border-radius: 50%;
@@ -143,18 +148,68 @@ i{
 .habit-img-title{
     margin-bottom: 0px;
 }
+/* run an extra mile style */
+
+.mile-container
+{
+    gap: 165px;
+ background-color: #222222;
+   padding: 40px;
+   border-radius: 18px
+  
+}
+.mile-title{
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.mile-img-contents{
+    width: 100%;
+   
+}
+.mile-img-contents img{
+    width: 100%;
+    border-radius: 18px;
+
+}
+
 
 
 /* responsive */
 /* medium device */
-/* small device */
-@media screen and (max-width: 576px) {
-    nav, .banner-contents, .habit-img-container{
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner-contents {
         flex-direction: column;
     }
     .banner-content{
         width: 100%;
-        margin-bottom: -45px;
+    }
+    
+    .habit-img-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .mile-container{
+        gap: 20px;
+    }
+    .mile-img-contents img{
+        height: 100%;
+    }
+}
+
+
+
+
+
+/* small device */
+@media screen and (max-width: 576px) {
+    nav, .banner-contents, .mile-container  {
+        flex-direction: column;
+    }
+    .banner-content{
+        width: 100%;
+       
     }
     .banner-title{
         font-size: 2.8rem;
@@ -165,6 +220,13 @@ i{
     .hamburger{
         display: inline ;
     }
+    .habit-img-container{
+        grid-template-columns: 1fr;
+    }
+    .mile-container {
+        gap: 60px;
+    }
+    
     
     
 }

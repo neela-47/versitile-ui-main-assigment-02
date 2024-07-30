@@ -21,6 +21,7 @@ body{
 /* shared content */
 .display-flex{
     display: flex;
+    justify-content: space-between;
 }
 .text-color{
     color: #E6533C;
@@ -30,6 +31,7 @@ body{
 }
 .paragraph-color{
     color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
 }
 .btn-primary{
     background-color: #E6533C;
@@ -40,15 +42,15 @@ body{
     margin-right: 20px;
   
 }
-
-
-/* header style */
-.header-container{
+.shared-width{
     width: 75%;
     margin: 0 auto;
     margin-top: 57px;
-    /* border: 1px solid red; */
 }
+
+
+/* header style */
+
 nav{
     justify-content:space-between;
     align-items: center;
@@ -125,13 +127,29 @@ i{
     background-color: red;
     
 }
+/* habit style */
+.habit-title-contents{
+    width: 64%;
+    margin: 0 auto;
+    text-align: center;
+}
+.habit-img-contents{
+    width: 20%;
+    text-align: center;
+}
+.habit-img-contents img{
+    border-radius: 50%;
+}
+.habit-img-title{
+    margin-bottom: 0px;
+}
 
 
 /* responsive */
 /* medium device */
 /* small device */
 @media screen and (max-width: 576px) {
-    nav, .banner-contents{
+    nav, .banner-contents, .habit-img-container{
         flex-direction: column;
     }
     .banner-content{
@@ -147,4 +165,6 @@ i{
     .hamburger{
         display: inline ;
     }
+    
+    
 }

@@ -14,6 +14,10 @@
     font-weight: <weight>;
     font-style: normal;
   }
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
 
 body{
     background-color: black;
@@ -41,6 +45,11 @@ body{
     padding: 8px 20px;
     margin-right: 20px;
   
+}
+.btn-primary-2{
+    padding: 8px 40px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .shared-width{
     width: 75%;
@@ -173,13 +182,75 @@ i{
     border-radius: 18px;
 
 }
+/* bmi calculator */
+.bmi-content{
+    text-align: center;
+    width: 47%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.bmi-calculator-contents{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #222222;
+    margin-top: 53px;
+    padding-top: 30px;
+}
+.bmi-calculator-content{
+    margin-left: 50px;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+tr th{
+   
+    padding: 10px;
+    color: white;
+   font-weight: 600;
+}
+td{ 
+    padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
+
+ 
+}
+.bmi-calculator{
+    width: 50%;
+}
+.calculator-title{
+    margin-bottom: 10px;
+}
+.bmi-calculator-description{
+    margin-bottom: 10px;
+}
+ form input, select{
+    padding: 10px;
+    padding-right: 50px;
+    background-color:rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
+}
+#sex{
+    padding-right: 180px;
+}
+#select{
+    padding-right: 325px;
+}
 
 
 
 /* responsive */
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .banner-contents {
+    .banner-contents, .bmi-calculator-contents {
         flex-direction: column;
     }
     .banner-content{
@@ -196,6 +267,16 @@ i{
     .mile-img-contents img{
         height: 100%;
     }
+    .bmi-calculator{
+        width: 100%;
+        margin-left: 40px;
+        margin-right: 20px;
+       
+    }
+    form input{
+        padding-right: 60px;
+        margin-right: 0px;
+    
 }
 
 
@@ -204,7 +285,7 @@ i{
 
 /* small device */
 @media screen and (max-width: 576px) {
-    nav, .banner-contents, .mile-container  {
+    nav, .banner-contents, .mile-container, .bmi-calculator-contents {
         flex-direction: column;
     }
     .banner-content{
@@ -220,13 +301,35 @@ i{
     .hamburger{
         display: inline ;
     }
-    .habit-img-container{
+    .habit-img-container,   {
         grid-template-columns: 1fr;
     }
     .mile-container {
         gap: 60px;
     }
-    
-    
-    
+    .bmi-content{
+      width: 95%;
+      margin-bottom: 40px;
+     
+    }
+    .bmi-calculator-content{
+        margin-left: 20px;
+    }
+    .bmi-calculator{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    form input{
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+    #sex{
+        padding-right: 120px;
+    }
+    #select{
+        padding-right: 192px;
+    }
+   
+      
 }

@@ -63,7 +63,7 @@ body{
 /* header style */
 
 header{
-    border: 5px solid red;
+    border: 1px solid transparent;
     margin-top: 0px;
     padding-top: 0px;
     background-color: rgba(48, 48, 48, 0.54);
@@ -149,6 +149,9 @@ i{
     margin-left: 30px;
     margin-right: 10px;
     
+}
+.badge-3{
+    display: none;
 }
 .banner-img{
     position: relative;
@@ -417,13 +420,7 @@ td{
    
     
 }
-.team-member-img .img-1 .img-4{
-    margin-left: 10px;
-} 
-.team-member-img .img-4 .img-5 .img-6 {
-   
-    padding-bottom: 10px;
-}
+
 .team-member-content{
     position: absolute;
     top: 160px;
@@ -538,6 +535,14 @@ hr {
     .banner-content{
         width: 100%;
     }
+    .badge-1{
+        margin-left: 10px;
+        margin-top: -300px;
+    }
+    .badge-2{
+        margin-top: -800px;
+        margin-left: 400px;
+    }
     
     .habit-img-container{
         grid-template-columns: repeat(2, 1fr);
@@ -556,13 +561,37 @@ hr {
        
     }
     form input{
-        padding-right: 60px;
+        padding-right: 130px;
         margin-right: 0px;
     }
+    #sex{
+        padding-right: 260px;
+    }
+    #select{
+        padding-right: 460px;
+    }
+    .team-member-container{
+        width: 80%;
+    }
+    .team-member-img
+     {
+        height: 270px;
+        width: 199px;
+     }
+    
+     .team-member-img img{
+        width: 100%;
+        height: 100%;
+     }
+    
     .ratings-reviews-container
     {
         width: 80%;
         margin: 0 auto;
+    }
+    
+    .training-container{
+        /* display: none; */
     }
     
 }
@@ -596,13 +625,18 @@ hr {
     }
     .badge-1
     {
-        margin-left: -20px;
-        margin-top: -280px;
-        height: 70px;
+      display: none;  
     }
-    .badge-1 .badge-content{
-         margin-top: 10px;
-    }
+     .badge-3{
+        display: inline-block;
+        position: absolute;
+        height: 72px;
+        margin-top: -220px;
+     }
+     .badge-3 img{
+        margin-top: 8px;
+        margin-left: 15px;
+     }
     .badge-2{
        margin-left: 170px;
        height: 70px;
@@ -617,6 +651,9 @@ hr {
     .mile-container {
         gap: 60px;
     }
+    
+    
+    
     .bmi-content{
       width: 95%;
       margin-bottom: 40px;
@@ -657,9 +694,13 @@ hr {
         width: 150px;
         margin-left: 5px;
     }
+    .exercise-1{
+      object-fit: cover;
+    }
     .exercise-2{
         width: 250px;
         margin-left: -20px;
+       background-size: cover;
     }
     .ratings-reviews-container{
         width: 90%;
@@ -668,6 +709,8 @@ hr {
     .ratings-reviews-container >.features img {
         width: 100%;
     }
-    
+    .training-container{
+     display: none;
+    }
       
 }

@@ -7,13 +7,8 @@
     font-style: normal;
     font-variation-settings:"slnt" 0
 }
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-.span-font-family {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+@import url('https://fonts.cdnfonts.com/css/miami');
+
   *{
     margin: 0px;
     padding: 0px;
@@ -96,9 +91,7 @@ nav  ul li{
     
 }
 i{
-    color: white;
-   
-    
+    color: white;   
 }
 .hamburger{
     display: none;
@@ -108,8 +101,8 @@ i{
     gap: 88px;
 }
 #txt-design{
-    font-family: "Dancing Script", cursive;
-}
+    font-family:'Miami', sans-serif;
+}                                              
 .download{
     background-color: black;
     border: .5px solid white;
@@ -128,37 +121,54 @@ i{
 
 .banner-img img{
     width: 100%;
-    position: relative;
-    
+    display: block;
+   
 }
 .badges
 {
     width: 200px;
     height: 96px;
-   color: white;
-   background-color: rgba(48, 48, 48, 0.54);
-   border-radius: 12px;
- 
+    color: white;
+    background-color: rgba(48, 48, 48, 0.54);
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+  
 }
 .badge-content{
     margin-top: 20px;
+    margin-right: 30px;
 }
-.badge-1{
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
- 
-}
+
 .circle{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: red;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
     
 }
+.banner-img{
+    position: relative;
+}
+.badge-1{
+    position: absolute;
+    margin-top: -180px;
+    margin-left: -90px;
+}
+.badge-2{
+   position: absolute;
+  margin-left: 210px;
+  margin-top: -470px;
+}
+.badge-2 .badge-content{
+  
+    margin: 0 auto;
+   margin-top: 20px;
+}
+
 /* habit style */
 .habit-title-contents{
     width: 64%;
@@ -185,7 +195,9 @@ i{
 }
 .habit-img-title{
     margin-bottom: 0px;
+
 }
+
 /* run an extra mile style */
 
 .mile-container
@@ -294,6 +306,22 @@ i{
     background-blend-mode: overlay;
 }
 
+/* challenge part training-machines style */
+.training-machines-image{
+    width: 20%;
+   box-shadow: 5px 5px 3px 6px gray;
+   border-radius: 12px;
+   position: relative;
+}
+.training-machines-image img{
+    width: 100%;
+    border-radius: 12px;
+   
+}
+.training-machine-content{
+position: absolute;
+top: 170px;
+}
 
 /* bmi calculator */
 .bmi-content{
@@ -376,6 +404,7 @@ td{
     grid-template-columns: repeat(3, 1fr);
     /* gap: 5px; */
     margin-bottom: 80px; 
+    padding: 10px;
   
    
 }
@@ -417,6 +446,59 @@ td{
 }
 
 
+/* ratings and reviews */
+.unique-part{
+    width: 75%;
+    margin: 0 auto;
+    background-color: #222222;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 12px;
+    margin-bottom: 70px;
+    
+
+}
+.ratings-reviews-container {
+    width: 50%;
+    height: 300px;
+    border-radius: 12px;
+    background-color: gainsboro;
+    padding: 15px;
+    margin-top: 45px;
+   
+}
+.reviews-title{
+    margin-bottom: 15px;
+}
+.rating-content{
+    margin-bottom: 30px;
+}
+
+
+#verified {
+background-color: orange;
+margin-top: 10px;
+}
+#horizontal{
+    border: 2px solid black;
+}
+.reviews-container{
+    background-color: gainsboro;
+    width: ;
+    padding: 15px;
+    border-radius: 12px;
+}
+.person{
+    margin-top: 20px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 5px;
+
+}
+.rating-description{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
 /* footer style */
 footer{
     background-color: #222222;
@@ -450,7 +532,7 @@ hr {
 /* responsive */
 /* medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .banner-contents, .bmi-calculator-contents {
+    .banner-contents, .bmi-calculator-contents, .unique-part {
         flex-direction: column;
     }
     .banner-content{
@@ -477,6 +559,11 @@ hr {
         padding-right: 60px;
         margin-right: 0px;
     }
+    .ratings-reviews-container
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
     
 }
 
@@ -486,7 +573,7 @@ hr {
 
 /* small device */
 @media screen and (max-width: 576px) {
-    nav, .banner-contents, .mile-container, .bmi-calculator-contents, .footer-contents {
+    nav, .banner-contents, .mile-container, .bmi-calculator-contents, .footer-contents, .unique-part {
         flex-direction: column;
     }
     .banner-content{
@@ -501,8 +588,29 @@ hr {
     }
     .hamburger{
         display: inline ;
+        justify-content: space-around;
        
     }
+    nav{
+        flex-direction: row;
+    }
+    .badge-1
+    {
+        margin-left: -20px;
+        margin-top: -280px;
+        height: 70px;
+    }
+    .badge-1 .badge-content{
+         margin-top: 10px;
+    }
+    .badge-2{
+       margin-left: 170px;
+       height: 70px;
+       width: 180px;
+    }
+    .badge-2 .badge-content{
+        margin-top: 10px;
+   }
     .habit-img-container,  .team-member-container {
         grid-template-columns: 1fr;
     }
@@ -553,6 +661,13 @@ hr {
         width: 250px;
         margin-left: -20px;
     }
-   
+    .ratings-reviews-container{
+        width: 90%;
+        margin-top: 10px;
+    }
+    .ratings-reviews-container >.features img {
+        width: 100%;
+    }
+    
       
 }
